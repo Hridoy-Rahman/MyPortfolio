@@ -1,10 +1,8 @@
 import React from 'react';
-import { data } from "../data";
-
+import { data } from '../data';
 
 const Work = () => {
   const project = data;
-
 
   return (
     <div name='works' className='w-full md:h-full text-gray-300 bg-[#0a192f]'>
@@ -16,39 +14,33 @@ const Work = () => {
           <p className='py-6'> Check out some of my recent work</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-
-        
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {project.map((item, index) => (
             <div
               key={index}
-              style={{
-                backgroundImage: `url(${item.image})`,
-                backgroundSize: 'cover'
-              }}
-              className="shadow-lg shadow-[#040c16] group container h-60 w-full rounded-md 
-              flex justify-center text-center items-center mx-auto content-div hover:scale-110 duration-500"
+              className='relative group container h-60 w-full rounded-md overflow-hidden hover:opacity-50 duration-500'
             >
+              <div
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                  backgroundSize: 'cover',
+                  height: '100%',
+                }}
+                
+              ></div>
 
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-red-600 tracking-wider ">
+              <div className='absolute inset-0 text-center pt-4 bg-blue-600 rounded-xl bg-opacity-0 opacity-0 group-hover:opacity-100'>
+                <span className='text-2xl rounded-lg px-4 py-3 m-2 mt-4 bg-blue-600 text-white font-bold tracking-wider'>
                   {item.name}
                 </span>
-                <div className="pt-8 text-center ">
-                  
-                  <a href={item.github} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-blue-600 text-white font-bold text-lg"
-                    >
+                <div className='pt-8 text-center'>
+                  <a href={item.github} target='_blank' rel='noopener noreferrer'>
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-blue-600 text-white font-bold text-lg'>
                       Code
                     </button>
                   </a>
-                  <a href={item.live} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-blue-600 text-white  font-bold text-lg"
-                    >
+                  <a href={item.live} target='_blank' rel='noopener noreferrer'>
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-blue-600 text-white font-bold text-lg'>
                       Live
                     </button>
                   </a>
@@ -56,8 +48,6 @@ const Work = () => {
               </div>
             </div>
           ))}
-
-
         </div>
       </div>
     </div>
