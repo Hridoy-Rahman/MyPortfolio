@@ -14,10 +14,10 @@ const About = () => {
           </div>
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-3xl font-bold'>
-              <p>Hi, I'm Hridoy Rahman, a MERN Stack Developer, nice to meet you. Please take a look around.</p>
+              <p>Hi, I'm Hridoy Rahman, a Front-End Developer, nice to meet you. Please take a look around.</p>
             </div>
             <div>
-              <p> I've mastered HTML, CSS, and JavaScript, along with dynamic frameworks like React. Crafting responsive designs using Tailwind CSS, Bootstrap, and Daisy UI is my forte. On the back-end, I'm well-versed in Node.js, Express.js, MongoDB, and prioritize security with JSON Web Tokens. Let's collaborate and shape digital experiences, one pixel at a time!</p>  
+              <p> I've mastered HTML, CSS, and JavaScript, along with dynamic frameworks like ReactJS and NextJS. Crafting responsive designs using Tailwind CSS, Bootstrap, and Daisy UI is my forte. On the back-end, I'm well-versed in Node.js, Express.js, MongoDB, and prioritize security with JSON Web Tokens. Let's collaborate and shape digital experiences, one pixel at a time!</p>  
             </div>
           </div>
       </div>
