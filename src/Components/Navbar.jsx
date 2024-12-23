@@ -36,6 +36,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to="experience" smooth={true} duration={500}>
+              Experience
+            </Link>
+          </li>
+          <li>
             <Link to="works" smooth={true} duration={500}>
               Projects
             </Link>
@@ -65,6 +70,7 @@ const Navbar = () => {
         <li className="py-6 text-4xl">Home</li>
         <li className="py-6 text-4xl">About</li>
         <li className="py-6 text-4xl">Skills</li>
+        <li className="py-6 text-4xl">Experience</li>
         <li className="py-6 text-4xl">Projects</li>
         <li className="py-6 text-4xl">Contact</li>
       </ul>
@@ -107,7 +113,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300 text-xl"
-              href="https://drive.google.com/file/d/1qhrzvhNypB9hLyEpAYBF8I153o1iLsgA/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Sb7HtpZggZ0UiDExfZlic-nIPd5uJyVH/view?usp=sharing"
             >
               {" "}
               Resume
